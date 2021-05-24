@@ -21,6 +21,7 @@ My this fully automatic script will help you to automate the process of manually
 9. If output is "OK with ip output" then everything is alright, if "KO" then recheck your domain and token for any error or issue.
 10. Automate the process of updating the IP every 30 mins with cron process.
 11. First open cron with: $crontab -e
-12. Then enter the given line without the double Quotation at the bottom of the crontab: "*/30 * * * * ~/path/to/autoipv6duckdns.sh >/dev/null 2>&1"
+12. Then enter the given line without the double Quotation at the bottom of the crontab: 
+"*/30 * * * * ~/path/to/autoipv6duckdns.sh >/dev/null 2>&1"
 13. Exit the crontab. 
 14. DONE........................ENJOY
