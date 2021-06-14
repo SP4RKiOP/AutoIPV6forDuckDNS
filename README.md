@@ -1,6 +1,10 @@
 # AutoIPV6forDuckDNS
 Fully automatic script to update the ipv6 address on DuckDNS.
 
+<p align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=AutoIPV6forDuckDNS" />
+</p>
+
 You came here because you know your problem that DUCKDNS does not self-updates ipv6 address of your system due to AWS limitations.
 My this fully automatic script will help you to automate the process of manually updating ipv6 address of your system. (IPV4 updates automatically)
 
