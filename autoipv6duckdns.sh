@@ -1,10 +1,15 @@
-#Presented to you by Abhishek Sinha
-#Fully Automation of ipv6 address update to DUCKDNS
+#!/bin/bash
+# Presented to you by Abhishek Sinha
+# Fully Automation of IPv6 address update to DUCKDNS
 
-ipv4add=$(curl --ipv4 https://gtwy.net/ip/)
+# Fetch the IPv4 address
+ipv4add=$(curl --silent --ipv4 https://gtwy.net/ip/)
 
-#ipv6 address variable
-ipv6add=$(curl --ipv6 https://gtwy.net/ip/)
+# Fetch the IPv6 address
+ipv6add=$(curl --silent --ipv6 https://gtwy.net/ip/)
 
-#Url to update the gathered information by variables to duckdns server.
-echo url="https://www.duckdns.org/update?domains=YourDOMAIN&token=YourTOKEN&ip=$ipv4add&ipv6=$ipv6add&verbose=true" | curl -k -o ~/autoipv6duckdns/autoipv6duckdns.log
+# URL to update the gathered information by variables to DuckDNS server
+url="https://www.duckdns.org/update?domains=YOURdomain&token=YOURtoken&ip=$ipv4add&ipv6=$ipv6add&verbose=true"
+
+# Send the update request
+curl -k "$url"
